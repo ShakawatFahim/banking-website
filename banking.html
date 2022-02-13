@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 class="text-5xl text-center">Account Details</h1>
+    <div class="grid grid-cols-3 gap-5 text-4xl  mt-10 mx-4 text-center">
+        <div class="bg-red-400 w-2/4 m-6 p-4 rounded">
+            <h1>Deposite</h1>
+            <p>$<span id="depoAmmo">00</span></p>
+        </div>
+        <div class="bg-green-400 w-2/4 m-6 p-4 rounded">
+            <h1>Withdraw</h1>
+            <p>$<span id="witAmmo">00</span></p>
+        </div>
+        <div class="bg-blue-400 w-2/4 m-6 p-4 rounded">
+            <h1>Balance</h1>
+            <p>$<span id="total">1250</span></p>
+        </div>
+    </div>
+    <div class="grid grid-cols-2 gap-5">
+        <div class="m-8 p-4 bg-blue-200 rounded">
+            <h1 class=" text-xl font-semibold ">Deposite Ammount:</h1>
+            <input id="depo" type="text" placeholder="write your ammount" class=" my-5 border-2 border-slate-500 p-3 rounded
+            block">
+            <button id="depobtn" class=" px-4 py-2 rounded font-semibold bg-red-600">Submit</button>
+        </div>
+        <div class="m-8 p-4 bg-violet-200 rounded">
+            <h1 class=" text-xl font-semibold ">Withdraw Ammount:</h1>
+            <input id="wit" type="text" placeholder="write your ammount" class=" my-5 border-2 border-slate-500 p-3 rounded
+            block">
+            <button id="witbtn" class=" px-4 py-2 rounded font-semibold bg-green-600">Submit</button>
+        </div>
+    </div>
+    <script src="js/account.js"></script>
+
+</body>
+
+</html>
