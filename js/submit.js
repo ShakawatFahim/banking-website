@@ -11,7 +11,6 @@ document.getElementById('submit-btn').addEventListener('click', function () {
         wrong.style.display = 'none';
     }
     else {
-        emailField.value = '';
         passwordField.value = '';
         right.style.display = 'none';
         wrong.style.display = 'block';
